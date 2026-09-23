@@ -2,7 +2,7 @@
 
 ## Environment
 - Ubuntu 26.04.1 LTS running in VirtualBox on Windows
-- Host machine: Acer Nitro 5, Intel i7 11th gen, 16GB RAM
+
 
 ## Skills Practiced
 
