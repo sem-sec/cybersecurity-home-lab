@@ -9,6 +9,17 @@
 - Installed the Active Directory Domain Services (AD DS) role via Server Manager
 - Promoted the server to a Domain Controller, creating a new forest and domain (corp.local)
 
+## Objects Created
+- Organizational Unit: Finance
+- User account: sarah.mitchell (inside the Finance OU)
+- Security group: Finance-Team (Global scope, Security type)
+- Added sarah.mitchell as a member of Finance-Team
+
+## Concepts Demonstrated
+- OU-based organization of accounts for scalable management
+- Group-based permission assignment vs. per-user permission assignment
+- Practical application of centralized identity management principles used in enterprise environments
+
 ## Troubleshooting
 - Resolved a black-screen boot issue after VM creation by switching the VirtualBox Graphics Controller setting (between VMSVGA and VBoxSVGA) and increasing allocated video memory
 - Used the VirtualBox "Insert Ctrl-Alt-Del" input command (Right Ctrl + Delete) to unlock the Windows login screen, since the host OS intercepts the standard key combination
