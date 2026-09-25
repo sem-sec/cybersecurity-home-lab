@@ -30,3 +30,13 @@
 - Kerberos authentication flow (TGT issuance, ticket-based resource access)
 - Group-based permission management vs per-user permissions
 - Security relevance: lateral movement and privilege escalation following an initial compromise
+
+## Domain Join & Authentication
+
+- Built a second VM (Client01, Windows 11 Pro) and joined it to the corp.local domain
+- Configured NAT Network in VirtualBox so DC01 and Client01 could communicate
+- Resolved a domain-join failure ("AD DC could not be contacted") by diagnosing and fixing DNS configuration on the client, pointing it to the domain controller's IP
+- Troubleshot a client-side network adapter issue (disabled adapter causing "general failure" on ping) using ipconfig /release and /renew
+- Successfully authenticated as a domain user (sarah.mitchell) on Client01, confirming Kerberos-based authentication against the domain controller
+- Practiced AD account administration: reset a user's password via Active Directory Users and Computers
+- Confirmed first-time domain login: Windows created a new local profile for the domain user on Client01, consistent with real-world AD first-login behavior
