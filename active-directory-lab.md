@@ -40,3 +40,11 @@
 - Successfully authenticated as a domain user (sarah.mitchell) on Client01, confirming Kerberos-based authentication against the domain controller
 - Practiced AD account administration: reset a user's password via Active Directory Users and Computers
 - Confirmed first-time domain login: Windows created a new local profile for the domain user on Client01, consistent with real-world AD first-login behavior
+
+## Group Policy
+
+- Created a GPO (Finance-Security-Policy) linked to the Finance OU
+- Configured screen saver / lock policy settings (timeout, password protection)
+- Applied the policy to a client machine using gpupdate /force
+- Verified policy application using gpresult /r, confirming Finance-Security-Policy appeared under Applied Group Policy Objects for the domain user
+- Learned that gpresult is the standard diagnostic tool for verifying Group Policy application in real environments, rather than relying on visual confirmation alone
